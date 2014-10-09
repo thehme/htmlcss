@@ -1,0 +1,98 @@
+<html>
+<head>Markup about tables</head>
+	<body>
+		<h1>Below are examples on how to create tables.</h1>
+		<h2>Simple table: </h2>
+		<p>The <b>&lt;table&gt;</b> tag is used to create a table, which is then built, row by row, using the <b>&lt;tr&gt;</b> tag. In order to add data to each <i>cell</i> in the table, the <b>&lt;td&gt;</b> tag can be used.</p>
+		<p>For example, the following table will be a 3x3 table without any titles or labels.</p>
+		<table>
+			<tr><td>1</td><td>2</td><td>3</td></tr>
+			<tr><td>2</td><td>4</td><td>6</td></tr>
+			<tr><td>3</td><td>8</td><td>12</td></tr>
+		</table>
+
+		<h2>Simple Table with Column Titles</h2>
+		<p>Suppose that you want to add titles to the columns in your table. In order to do this, you need to use the <b>&lt;th&gt;</b> tag. You would need to add a new row with the <b>&lt;tr&gt;</b> tag and then for each column, add a <b>&lt;th&gt;</b> containing the title. If the column doesn't need a title, you can leave the <b>&lt;th&gt;</b> tag empty, but it must still be included.</p>
+
+		<table>
+			<tr><th></th><th>Powers of 2</th><th>Powers of 3</th><th>Powers of 4</th></tr>
+			<tr><th>Line 1</th><td>2</td><td>3</td><td>4</td></tr>
+			<tr><th>Line 2</th><td>4</td><td>9</td><td>16</td></tr>
+			<tr><th>Line 3</th><td>8</td><td>27</td><td>64</td></tr>
+		</table>
+		<p>You can also use the <b>scope</b> attibute on the <b>&lt;th&gt;</b> to indicate if the heading is for a row or column. Simple set <b>scope</b> equals to <b>"col"</b> for column or <b>"row"</b> for row.</p>
+
+		<table>
+			<tr>
+				<th></th>
+				<th scope="col">Powers of 2</th>
+				<th scope="col">Powers of 3</th>
+				<th scope="col">Powers of 4</th>
+			</tr>
+			<tr>
+				<th scope="row">Line 1</th>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+			<tr><th scope="row">Line 2</th>
+				<td>4</td>
+				<td>9</td>
+				<td>16</td>
+			</tr>
+			<tr><th scope="row">Line 3</th>
+				<td>8</td>
+				<td>27</td>
+				<td>64</td>
+			</tr>
+		</table>
+
+		<h2>Spanning Table</h2>
+		<p>If you want your table to take up more than one cell in the the direction of a row or the direction of the column, then you need to use the <b>colspan</b> or <b>rowspan</b> attributes of the <b>&lt;td&gt;</b> tag. The <b>colspan</b> and <b>rowspan</b> attributes can be assigned a number string correspondig to the number of cells the data should take up, e.g. "2" for 2 cells.</p>
+
+		<table>
+			<tr>
+				<th></th>
+				<th scope="col">Monday</th>
+				<th scope="col">Tues</th>
+				<th scope="col">Wed</th>
+				<th scope="col">Thurs</th>
+				<th scope+"col">Fri</th>
+			</tr>
+			<tr>
+				<th scope="row">8AM</th>
+				<td colspan=5>Daily Meetings With Michael</td>
+			</tr>
+			<tr><th scope="row">9AM</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>Call Jim</td>
+			</tr>
+			<tr><th scope="row">10AM</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td rowspan="2">Web Conference Sam</td>
+				<td></td>
+			</tr>
+			<tr><th scope="row">11AM</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr><th scope="row">12AM</th>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<p>It is hard to appreaciate how the rows and columns are spanning across the table, but the styling should be handled with CSS. Note: the are ways of styling tables with older code, but for newer sites, the use of CSS is prefered.</p>
+		<p>When working with a very long table, it is useful to use the <b>&lt;thead&gt;</b> and <b>&lt;tfoot&gt;</b> tags to sorround the content of <b>&lt;tbody&gt;</b>. Apparently when you do this, the header stays with the table if it overflows to beyond the sice of the screen; this way the user can scroll down and not loose the titles of the columns.</p>
+
+	</body>
+</html>
