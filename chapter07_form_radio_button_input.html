@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>Form with Radio Buttons</title>
+	</head>
+	<body>
+		<h1>Form with Radio Buttons</h1>
+		<p>Again, in order to create a form, the <b>&lt;form&gt;</b> element needs to used in conjunction with the <b>&lt;input&gt;</b> element</p>
+		<p>For each radio button, there should be an <b>&lt;input&gt;</b> element, with the following attributes:
+			<ul>
+				<li><b>type</b> set to "radio"</li>
+				<li><b>name</b> set to the same value, e.g. "option", such that once the user makes a choice, the radio button value will be assigned to this name attribute. </li>
+				<li><b>value</b> should be set to the value that will be sent to the server when the particular radio button is selected.</li>
+				<li><b>required</b> can be used as well, if you want to have a radio button checked by default. This attribute should be assigned the value "checked" in being used.</li>
+			</ul>
+		</p>
+		<p>What would you like for lunch today? <br />
+			<form>
+				<input type="radio" name="lunch" value="chinese" />Chinese
+				<input type="radio" name="lunch" value="japanese" />Japanese
+				<input type="radio" name="lunch" value="mexican" />Mexican
+				<input type="radio" name="lunch" value="mediterranean" />Mediterranean
+			</form>
+		</p>
+		<p>You can use the <b>&lt;br&gt; /</b> tag to introduce a new line.</p>
+		<p>What would you like for lunch today? <br />
+			<form>
+				<input type="radio" name="lunch" value="chinese" />Chinese<br />
+				<input type="radio" name="lunch" value="japanese" />Japanese<br />
+				<input type="radio" name="lunch" value="mexican" />Mexican<br />
+				<input type="radio" name="lunch" value="mediterranean" />Mediterranean
+			</form>
+		</p>
+
+	</body>
+</html>
