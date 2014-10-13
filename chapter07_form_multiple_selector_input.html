@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<title>Multiple Selector Form</title>
+	</head>
+	<body>
+		<h1>Multiple Selector Form</h1>
+		<p>Suppose you want to allow the users to make multiple selections on a form. In order to do this, you can create a <b>&lt;form&gt;</b> element using the <b>&lt;select&gt;</b> element. The <b>&lt;select&gt;</b> element should be given a name via it's <b>name</b> attibute, which will be used to keep track of the option/s the user will select. If you want to let the user see more than one option from the list of options, the <b>size</b> attribute can be adjusted. If you want the user to be able to select more than one option, you can do this by setting the <b>&lt;select&gt;</b>'s <b>multiple</b> attribute to "multiple".</p>
+		<p>For each option the user has available, you should create a new <b>&lt;option&gt;</b> element and assign a value to its <b>value</b> attribute. If you want any of these options to be pre-selected when the user loads the page, set its <b>selected</b> attribute to "selected". The option the user will see in the browser corresponds to the text you place between each option's opening and closing tags.</p>
+		<form>
+			<p>The position you are applying for may require relocation, to which states are you willing to relocate to? Pick your top choices.</p>
+			<select name="states" size="4" multiple="multiple">
+				<option value="nj">NJ</option>
+				<option value="ny">NY</option>
+				<option value="ca">CA</option>
+				<option value="fl">FL</option>
+				<option value="or">OR</option>
+				<option value="nh">NH</option>
+				<option value="il">IL</option>
+				<option value="tx">TX</option>
+				<option value="pa">PA</option>
+				<option value="mi">MI</option>
+			</select>
+		</form>
+	</body>
+</html>
