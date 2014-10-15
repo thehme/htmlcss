@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>File Input and Submit Button</title>
+	</head>
+	<body>
+		<h1>File Input Form plus Upload Button</h1>
+		<p>This functionality will require creating a <b>&lt;form&gt;</b> element that will not only have an <b>action</b> attribute, but also a <b>method</b> attribute. In all the examples, the <b>action</b> attribute has been omitted because the input from the user is not being sent anywhere for processing, but this should be included in a real site. As for the <b>method</b> attribute, it should be set to "POST", when sending information to the server for processing.</p>
+		<p>The <b>&lt;input&gt;</b> element contained in the <b>&lt;form&gt;</b> element will need to have a <b>type</b> attribute set to "file" in order to give the user the option to browse for an image to upload. The <b>name</b> attribute should also be used to name the the input of the user.</p>
+		<p>When you let users load a file, you will likely want and need users to upload their input, therefore, you will need an "upload button". To create this, you simply need to add another <b>&lt;input&gt;</b> element, with a <b>type</b> attribute set to "submit" and a <b>value</b> attribute set to something descriptive like "upload".</p>
+		<form method="post">
+			<p>Upload your favorite cat picture:</p><br />
+			<input type="file" name="cat_picture" /><br />
+			<input type="submit" value="upload" />
+		</form>
+		<h1>Submit Button</h1>
+		<p>On the note of buttons, suppose that you want your users to provide their e-mail, so you can alert them about their image loading successfully. To do this, you would want a text area for the e-mail, and a submit button. As in the previous example, this functionality can be accomplished using a <b>&lt;form&gt;</b> element that will contain an <b>&lt;input&gt;</b> element. Again, the <b>&lt;form&gt;</b> element will require an <b>action</b> and a <b>method</b> attribute.</p>
+		<p>To create the text area for the user to enter their e-mail, you need to create a text input, so the <b>&lt;input&gt;</b> element will have a <b>type</b> attribute set to "text" and a <b>name</b>, set to the name you want this information to have, for example, email. The submit button will be create similar to the upload button above. You will need an <b>&lt;input&gt;</b> element with a <b>type</b> attribute set to "submit", a <b>name</b> and also <b>value</b> attribute. Remember that the <b>value</b> attribute is what the users will see in the browser, so set this to something descriptive, "Subscribe" e.g.</p>
+		<form method="post">
+			<p>Enter your e-mail:</p>
+			<input type="text" name="email" />
+			<input type="submit" name="subscribe" value="Subscribe"/>
+		</form>
+		<h1>Image Button</h1>
+		<p>Suppose you've designed the look of a button and want to use that image as the button image. Well, in order to do this, you can simply create a <b>&lt;form&gt;</b> element and for the <b>&lt;input&gt;</b> element, assign "image" to the <b>type</b> attribute. You will also need to use the <b>src</b> attribute of the <b>&lt;input&gt;</b> element and assign to it the location of the image.</p>
+	</body>
+</html>
