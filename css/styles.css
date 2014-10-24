@@ -1,0 +1,31 @@
+/* Body Styling*/
+body{
+	font-family: georgia;
+}
+
+/* Div Styling for kitty-shortcuts */
+.shortcuts {
+	color: gray;
+	font-weight: bold;
+}
+/* removing bullet points */
+ul.topnavbuttons {
+	list-style-type: none; 
+}
+
+/* to display inline */
+li {
+	display: inline;
+}
+
+/* Styling for anchors*/
+a {
+	text-decoration: none;
+	color: gray;
+}
+
+.topnavbuttons img {
+	width: 40px;
+	height: 40px;
+	vertical-align: middle;
+}
